@@ -1,69 +1,58 @@
 \documentclass[es]{uc3mreport}
 
 
-\usepackage{lipsum}  % generates dummy text
 \usepackage{import}
 
+\usepackage{mymacros}  % report-specific macros
 
 
 % general config
 
 \graphicspath{{img/}}  % Images folder
-\addbibresource{references.bib}  % bibliography file
+% \addbibresource{references.bib}  % bibliography file
 
-\degree{Grado en Linux}
-\subject{LaTeXología}
-\academicyear{2024-2025}  % academic year
-\group{69}
+\degree{Máster en Ingeniería Informática}
+\subject{Subject}
+\academicyear{202X-202Y}  % academic year
+\group{Z}
 \author{
-    Tu Nombre Aquí -- 100042069\\
-    Otro Nombre Allá -- 100069420
+  Luis Daniel Casais Mezquida -- 100429021
+  % \\
 }
-% \team{Equipo 69}  % optional
-\shortauthor{\abbreviateauthor{Tu Nombre}{Aquí} y \abbreviateauthor{Otro Nombre}{Allá}}  % optional
-\lab{Práctica 0}
-\title{La mejor memoria de la historia}
-% \shorttitle{La mejor memoria de la historia}  % optional
-\professor{Perico de los Palotes}  % optional
+% \team{Equipo 69}
+\shortauthor{\abbreviateauthor{Luis Daniel}{Casais Mezquida}}
+\lab{Lab 0}
+\title{Name}
+% \shorttitle{La mejor memoria de la historia}
+\professor{Perico de los Palotes}
 
-
-% report
 
 \begin{document}
-    \makecover
+  \makecover[old]
 
-    \tableofcontents
-    % \listoffigures
-    % \listoftables
+  \tableofcontents
+  % \listoffigures
+  % \listoftables
 
-    % contenidos
-    \begin{report}
-        \part{Mi parte}
-        \lipsum[1] \parencite{cicero45finibus}
+  % contenidos
+  \begin{report}
 
-        \section{Mi sección}
-        \lipsum[1]
+    % \includefrom{parts}{file.tex}
 
-        \subsection{Mi subsección}
-        \lipsum[2-4]\footnote{Caca de la vaca Paca.}
+  \end{report}
 
 
-        \subsubsection{Mi subsubsección}
-        \lipsum[2-4]
-    \end{report}
+  % bibliography
+  % \label{bibliography}
+  % \part{Bibliografía}
+  % \printbibliography
+  % \printbibliography[heading=none]  % alternative
 
-
-    % bibliography
-    \label{bibliography}
-    \part{Referencias}
-    \printbibliography
-    % \printbibliography[heading=bibintoc,title={Referencias}]  % alternative
-
-    % appendices
-    \begin{appendices}
-        \part{Apéndices}  % optional
-        \section{Mi apéndice}
-        \lipsum[1]
-    \end{appendices}
+  % appendices
+  % \begin{appendices}
+  %   \part{Apéndices}  % optional
+  %   \section{Mi apéndice}
+  %   \lipsum[1]
+  % \end{appendices}
 
 \end{document}
