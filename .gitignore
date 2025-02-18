@@ -1,3 +1,5 @@
+.vscode/
+
 *.aux
 *.bcf
 *.fdb_latexmk
@@ -22,12 +24,17 @@
 *.mtc0
 *.lof
 *.lot
-*.bbl-SAVE-ERROR
-*.bcf-SAVE-ERROR
+*.err
+*.xmpi
+*.lua
+*.xdv
+*.*-SAVE-ERROR
+*.vrb
+*.nav
+*.snm
+*.bkp
 
 svg-inkscape/
 _markdown_report/
 
 report.pdf
-
-.vscode/
